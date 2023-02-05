@@ -24,3 +24,4 @@ girlButton.addEventListener('click', () => proposedName.innerText = `Nazwij cór
 
 boyButton.addEventListener('click', () => proposedName.innerText = `Nazwij syna ${randomBoy.slice(0, -1)}`);
 
+// dodać funkcję która odświeża wynik co kliknięcie
