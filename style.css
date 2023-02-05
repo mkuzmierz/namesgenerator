@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;1,100&display=swap');
+
+
 html {
     box-sizing: border-box;
 }
@@ -6,3 +9,32 @@ html {
     box-sizing: inherit;
   }  
 
+  body {
+    background-color: #CDB4DB;;
+    font-family: 'Raleway', sans-serif;
+  }
+
+
+.names {
+
+}
+
+.names__button {
+
+}
+
+.names__button--girl {
+
+}
+
+.names__button--boy {
+
+}
+
+.names__idea{
+  display: block;
+}
+
+.page-header {
+
+}
