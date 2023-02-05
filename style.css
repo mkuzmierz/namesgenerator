@@ -49,3 +49,11 @@ html {
   font-style: italic;
   font-size: 42px;
 }
+
+.transform-girl {
+  background-color: #BDE0FE;
+}
+
+.transform-boy {
+  background-color: #FFC8DD;
+}

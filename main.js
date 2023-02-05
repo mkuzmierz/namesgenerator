@@ -8,20 +8,19 @@ console.log(girlsNamesArray);
 const boysNamesArray = boysNames.split(' ');
 console.log(boysNamesArray);
 
-const randomGirl = girlsNamesArray[Math.floor(Math.random() * girlsNamesArray.length)];
 
 const girlButton = document.querySelector('.names__button--girl');
 
-const randomBoy = boysNamesArray[Math.floor(Math.random() * boysNamesArray.length)];
-
 const boyButton = document.querySelector('.names__button--boy');
 
+let proposedName = document.querySelector('.names__idea');
 
-const proposedName = document.querySelector('.names__idea');
+girlButton.addEventListener('click', e => {
+    const randomGirl = girlsNamesArray[Math.floor(Math.random() * girlsNamesArray.length)];
+    proposedName.innerHTML = `Nazwij córkę ${randomGirl.slice(0, -1)}`;
+})
 
-
-girlButton.addEventListener('click', () => proposedName.innerText = `Nazwij córkę ${randomGirl.slice(0, -1)}`);
-
-boyButton.addEventListener('click', () => proposedName.innerText = `Nazwij syna ${randomBoy.slice(0, -1)}`);
-
-// dodać funkcję która odświeża wynik co kliknięcie
+boyButton.addEventListener('click', e => {
+    const randomBoy = boysNamesArray[Math.floor(Math.random() * boysNamesArray.length)];
+    proposedName.innerHTML = `Nazwij syna ${randomBoy.slice(0, -1)}`;
+} );
